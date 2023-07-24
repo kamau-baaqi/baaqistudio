@@ -33,11 +33,30 @@
       overflow: hidden;
     } */
 
-    /* Responsive Styles */
-    @media screen and (max-width: 768px) {
-      /* Adjust font sizes for smaller screens */
-      /* Add other necessary style adjustments */
-    }
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  body {
+    font-size: 16px; /* Example: Decrease the font size for smaller screens */
+  }
+
+  /* Adjust layout for smaller screens */
+  .container {
+    max-width: 90%; /* Example: Decrease the container width for better fit on small screens */
+  }
+
+  /* Add other necessary style adjustments */
+  .grid-item {
+    width: 100%; /* Example: Make grid items take the full width on smaller screens */
+    margin-bottom: 20px; /* Example: Add margin between grid items on smaller screens */
+  }
+
+  /* Example: Hide the social links on smaller screens */
+  .social {
+    display: none;
+  }
+}
+
   </style>
 </head>
 <body>

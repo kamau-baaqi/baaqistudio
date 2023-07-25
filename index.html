@@ -47,28 +47,19 @@
         height: 100%;
       }
 
-      /* Responsive Styles */
       @media screen and (max-width: 768px) {
-        body {
-          font-size: 16px;
+        .row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100vh; /* Adjust this value if needed */
         }
 
-        
-
-        .container {
-          max-width: 90%;
-        }
-
-        .grid-item {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .social {
-          display: none;
+        .mobile-text {
+          text-align: center;
         }
       }
-      
     </style>
   </head>
   <body>
@@ -97,8 +88,10 @@
         <div class="container content">
           <div class="row">
             <div class="col-md-6">
-              <p>Design and digital solutions</p>
-              <p>Presented by <a href="About.html">Kamau Baaqi</a></p>
+              <p class="mobile-text">Design and digital solutions</p>
+              <p class="mobile-text">
+                Presented by <a href="About.html">Kamau Baaqi</a>
+              </p>
             </div>
           </div>
           <div class="container">

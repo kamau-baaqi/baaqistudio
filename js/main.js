@@ -3,7 +3,7 @@
 // Variable to store the last landscape video
 let lastVideo = null;
 
-const apiKey = PEXELS_API_KEY;
+const apiKey = process.env.PEXELS_API_KEY;
 const url = `https://api.pexels.com/videos/search?query=nature&per_page=10`;
 
 fetch(url, {

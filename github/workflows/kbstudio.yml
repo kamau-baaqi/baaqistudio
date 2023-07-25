@@ -1,4 +1,4 @@
-name: Your Workflow Name
+name: kbstudio
 on:
   # Define the event that triggers this workflow
   push:

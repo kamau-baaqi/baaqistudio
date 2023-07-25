@@ -4,7 +4,7 @@ let interactiveParticle = null;
 let interactiveMode = false;
 
 function setup() {
-  let canvas = createCanvas(710, 500);
+  let canvas = createCanvas(410, 700);
   canvas.parent("sketch-holder");
   colorMode(HSB, 360, 100, 100);
   noStroke();
@@ -15,7 +15,7 @@ function setup() {
   backgroundColor = color(0, 0, 0, 30);
 
   // Create particles
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 30; i++) {
     let particle = new Particle();
     particles.push(particle);
   }

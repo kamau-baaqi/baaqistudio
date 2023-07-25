@@ -20,5 +20,5 @@ jobs:
       # ... other steps of your workflow ...
 
       - name: Run your script
-        run: main.js
+        run: node main.js
           # Your script commands go here, which use the PEXELS_API_KEY environment variable

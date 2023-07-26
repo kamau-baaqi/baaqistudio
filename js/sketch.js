@@ -2,22 +2,34 @@ let particles = [];
 let backgroundColor;
 let interactiveParticle = null;
 let interactiveMode = false;
+const relaxingColors = [185, 220, 270]; // Hues for relaxing colors
 
 function setup() {
   let canvas = createCanvas(410, 400);
   canvas.parent("sketch-holder");
   colorMode(HSB, 360, 100, 100);
   noStroke();
-  frameRate(30);
+  frameRate(60);
   canvas.style("background-color", "transparent");
 
   // Set the background color
   backgroundColor = color(0, 0, 0, 30);
 
   // Create particles
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 25; i++) {
     let particle = new Particle();
     particles.push(particle);
+  }
+
+  // Randomly select a particle to be of a different color at setup
+  let randomIndex = floor(random(particles.length));
+  for (let i = 0; i < particles.length; i++) {
+    if (i === randomIndex) {
+      let colorHue = random(relaxingColors);
+      particles[i].color = color(colorHue, 80, 100);
+    } else {
+      particles[i].color = color(190, 80, 100);
+    }
   }
 }
 
@@ -56,15 +68,15 @@ function mouseReleased() {
 class Particle {
   constructor() {
     this.position = createVector(random(width), random(height));
-    this.velocity = createVector(random(-1, 1), random(-1, 1));
+    this.velocity = createVector(random(-3, 3), random(-3, 3));
     this.size = random(15, 30);
-    this.color = color(random(190, 220), 80, 100);
+    this.color = color(190, 80, 100);
   }
 
   update() {
     this.position.add(this.velocity);
+    this.velocity.mult(0.98);
 
-    // Bounce off the edges
     if (this.position.x < 0 || this.position.x > width) {
       this.velocity.x *= -1;
     }

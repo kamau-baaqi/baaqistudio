@@ -2,7 +2,6 @@ let particles = [];
 let backgroundColor;
 let interactiveParticle = null;
 let interactiveMode = false;
-const relaxingColors = [185, 220, 270]; // Hues for relaxing colors
 
 function setup() {
   let canvas = createCanvas(410, 400);
@@ -25,10 +24,9 @@ function setup() {
   let randomIndex = floor(random(particles.length));
   for (let i = 0; i < particles.length; i++) {
     if (i === randomIndex) {
-      let colorHue = random(relaxingColors);
-      particles[i].color = color(colorHue, 80, 100);
+      particles[i].color = color(200, 80, 100); // Original blue shade
     } else {
-      particles[i].color = color(190, 80, 100);
+      particles[i].color = color(220, 50, 100); // Lighter blue shade
     }
   }
 }
@@ -70,7 +68,7 @@ class Particle {
     this.position = createVector(random(width), random(height));
     this.velocity = createVector(random(-3, 3), random(-3, 3));
     this.size = random(15, 30);
-    this.color = color(190, 80, 100);
+    this.color = color(220, 50, 100); // Lighter blue shade (default color)
   }
 
   update() {

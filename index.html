@@ -15,6 +15,13 @@
     <script src="js/sketch.js"></script>
 
     <style>
+
+html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+      
       .grid-item.large {
         position: relative;
       }
@@ -23,7 +30,7 @@
         width: 100%;
         height: 100%;
         /* Adjust the translation value as needed to move the video higher along the y-axis */
-        transform: translateY(-125%);
+        transform: translateY(-120%);
       }
 
       .sketch-container {
@@ -35,18 +42,21 @@
 
       .grid-item.tall {
         position: relative;
-        padding-right: 550;
+        padding-right: 500;
       }
 
       #sketch-holder {
         position: absolute;
+        transform: translateY(-10%);
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
       }
 
-        footer {
+ 
+
+      footer {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 0;
@@ -84,16 +94,16 @@
           <ul class="navbar-classic">
             <!-- <li><a href="#services" class="anchor">Services</a></li> -->
             <li>
-              <a href="Gallery.html">Gallery</a>
+              <a href="portfolio-lightbox.html">Gallery</a>
             </li>
-            <!-- <li><a href="Contact.html">Contact</a></li> -->
+            <!-- <li><a href="contact.html">Contact</a></li> -->
           </ul>
           <div class="mobile-nav"></div>
         </div>
       </header>
 
       <section id="office" class="item">
-        <div class="container content">
+        <div class="container content" style="padding-bottom: 10px;">
           <div class="row">
             <div class="col-md-6">
               <p class="mobile-text">Design and digital solutions</p>
@@ -115,9 +125,9 @@
                     controlsList="nodownload"
                   >
 
-                  </video>
-
-                </div> 
+                  <p id="pexels-author">Video credits: Your Video Author</p>
+                  <!-- Add the video credits here -->
+                </div>
                 <div class="grid-item tall">
                   <div id="sketch-holder" class="sketch-container">
                     <!-- Your p5.js sketch will be rendered here -->
@@ -137,12 +147,13 @@
             <div class="col-md-8 text-right">
               <!-- Copyright message -->
               <div class="copyright">
-                2022 &copy; KB Studio. All rights reserved.
+                2023 &copy; KB Studio. All rights reserved.
               </div>
             </div>
           </div>
         </div>
       </footer>
+      
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

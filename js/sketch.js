@@ -4,7 +4,7 @@ let interactiveParticle = null;
 let interactiveMode = false;
 
 function setup() {
-  let canvas = createCanvas(410, 400);
+  let canvas = createCanvas(410, 900);
   canvas.parent("sketch-holder");
   colorMode(HSB, 360, 100, 100);
   noStroke();

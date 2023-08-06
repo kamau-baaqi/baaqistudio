@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Baaqi Studio - Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta charset="utf-8" />
@@ -10,262 +11,145 @@
     <link rel="icon" type="image/png" href="favicon.png?v=2" />
     <script src="js/assets/jquery.js"></script>
     <style>
-      .button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      header {
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        background: white;
-       
-}
-
-
-
-
-
-      @media (max-width: 768px) {
-
-        .footer-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto; /* Adjust height as needed */
-        padding: 20px 0;
-        width: 100%;
-    }
-
-        .navbar-classic {
-          display: none;
+        body {
+            font-size: 16px;
+            line-height: 1.6;
         }
-        .mobile-nav {
-          display: block;
+
+        h1, h2, h3 {
+            line-height: 1.2;
         }
+
         .button-container {
-          margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
-        .col-md-2, .col-md-8 {
-          flex: 0 0 100%;
-          max-width: 100%;
-          text-align: center;
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: white;
         }
-        .plan.item {
-          margin-bottom: 20px;
+
+        .content {
+            margin-top: 80px; /* to avoid content hiding behind the fixed header */
         }
-      }
+
+        @media (max-width: 768px) {
+            .footer-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                padding: 20px 0;
+                width: 100%;
+            }
+
+            .navbar-classic {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .button-container {
+                margin-top: 20px;
+            }
+
+            .col-md-2,
+            .col-md-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .plan.item {
+                margin-bottom: 20px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <!-- ... Rest of your code remains unchanged ... -->
-    <script src="js/assets/bootstrap.js"></script>
-    <script src="js/assets/imagesloaded.pkgd.min.js"></script>
-    <script src="js/assets/validation.js"></script>
-    <script src="js/assets/masonry.pkgd.min.js"></script>
-    <script src="modules/tera-slider/tera-slider.js"></script>
-    <script src="modules/tera-lightbox/tera-lightbox.js"></script>
-    <script src="js/assets/animsition.js"></script>
-    <script src="js/functions.js"></script>
-  </body>
-</html>
+</head>
 
-  <body>
-    <div class="body-overlay"></div>
-    <!-- Menu-->
+<body>
     <div class="nav-container">
-      <!-- <ul class="nav">
-        <li>
-          <a href="#">Portfolio </a>
-          <ul class="dropdown">
-            <li>
-              <a href="../pages/portfolio-3-col.html">3 Columns - Masonry</a>
-            </li>
-            <li>
-              <a href="../pages/portfolio-no-spacing.html"
-                >3 Columns - No Spacing</a
-              >
-            </li>
-            <li>
-              <a href="../pages/portfolio-lightbox.html">Lightbox Portfolio</a>
-            </li>
-            <li><a href="../pages/portfolio-single.html">Single Item #1</a></li>
-            <li>
-              <a href="../pages/portfolio-single-2.html">Single Item #2</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Pages </a>
-          <ul class="dropdown">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/about-us.html">About Us</a></li>
-            <li><a href="../pages/about-me.html">About Me</a></li>
-            <li><a href="../pages/services.html">Services</a></li>
-            <li><a href="../pages/error-404.html">Error 404</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Blog </a>
-          <ul class="dropdown">
-            <li><a href="../pages/blog.html">Blog - Classic</a></li>
-            <li><a href="../pages/blog-images.html">Blog - Thumbs</a></li>
-            <li><a href="../pages/blog-post.html">Post - Classic</a></li>
-            <li><a href="../pages/blog-post-image.html">Post - Hero</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Features </a>
-          <ul class="dropdown">
-            <li><a href="../pages/hero-fs.html">Fullscreen Hero</a></li>
-            <li><a href="../pages/hero-dark.html">Dark Hero</a></li>
-            <li><a href="../pages/boxed-layout.html">Boxed Layout</a></li>
-            <li>
-              <a href="../pages/tera-slider.html"
-                >Tera Slider <span class="label">3.1</span></a
-              >
-            </li>
-            <li><a href="../pages/tera-carousel.html">Carousel</a></li>
-            <li><a href="../pages/elements.html">Elements</a></li>
-            <li><a href="../pages/menu-classic.html">Classic Menu</a></li>
-            <li><a href="../pages/one-page.html">One-page Website</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Shop </a>
-          <ul class="dropdown">
-            <li><a href="../pages/shop.html">Shop overview</a></li>
-            <li><a href="../pages/product.html">Product page</a></li>
-            <li><a href="../pages/cart.html">Cart</a></li>
-          </ul>
-        </li>
-      </ul> -->
-      <div class="copyright">
-        2022 &copy; Baaqi Studio. All rights reserved.
-      </div>
-      <div class="exit"></div>
-      <!-- <ul class="social">
-        <li><a href="#" class="fa fa-twitter"></a></li>
-        <li><a href="#" class="fa fa-dribbble"></a></li>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-instagram"></a></li>
-        <li><a href="#" class="fa fa-pinterest"></a></li>
-      </ul> -->
+        <div class="copyright">
+            2022 &copy; Baaqi Studio. All rights reserved.
+        </div>
     </div>
-    <!-- Wrapper-->
+
     <div id="wrapper" class="container-fluid smooth-transition">
-      <!-- Header-->
-      <header>
-        <div class="container">
-          <h1 class="brand">Baaqi Studio</h1>
-          <!-- Branding<a href="../index.html" class="brand"> <img alt="" src="../images/logo-black.svg" class="dark-brand"><img alt="" src="../images/logo-white.svg" class="light-brand"></a>-->
-          <!-- Menu-->
-          <ul class="navbar-classic">
-            <li><a href="Services.html" class="anchor">Services </a></li>
-            <li><a href="Gallery.html" class="anchor">Gallery </a></li>
-            <li><a href="Contact.html" class="anchor">Contact </a></li>
-          </ul>
-          <div class="mobile-nav"></div>
-        </div>
-      </header>
-      </section>
-
-      
-      <section class="content container top-line">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 text-center">
-            Baaqi Studio stands for unparalleled development, addressing diverse client needs for professional, bespoke solutions. Each project benefits from a distinct skill set drawn from rich experience in iOS app development and front-end web development. Here, crafting intuitive mobile applications using Xcode, SwiftUI, and UIKit takes center stage. Additionally, the mastery of HTML, CSS, and JavaScript ensures the creation of captivating websites, underlining the commitment to exceed client expectations with exceptional digital solutions.
-            <div class="intro">
-              <h2 class="title"></h2>
+        <header>
+            <div class="container">
+                <h1 class="brand">Baaqi Studio</h1>
+                <ul class="navbar-classic">
+                    <li><a href="Services.html" class="anchor">Services </a></li>
+                    <li><a href="Gallery.html" class="anchor">Gallery </a></li>
+                    <li><a href="Contact.html" class="anchor">Contact </a></li>
+                </ul>
+                <div class="mobile-nav"></div>
             </div>
+        </header>
+
+        <section class="content container top-line">
             <div class="row">
-              <div class="col-md-4">
-                <div class="plan item">
-                  <h3> Consultation</h3>
-                  
-                  <ul>
-                    <li><strong>Project Assessment</strong>: Detailed review of project needs.</li>
-                    <li><strong>Strategy Planning</strong>: Tailored solution strategies.</li>
-                    <li><strong>Technical Guidance</strong>: Expert technology advice.</li>
-                    <li><strong>Scalability Advice</strong>: Growth-ready solution planning.</li>
-                  </ul>
-                  
-                  <!-- <a href="WebService.html" class="btn btn-default">View plan</a> -->
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    Baaqi Studio stands for unparalleled development, addressing diverse client needs for professional,
+                    bespoke solutions. Each project benefits from a distinct skill set drawn from rich experience in iOS
+                    app development and front-end web development. Here, crafting intuitive mobile applications using
+                    Xcode, SwiftUI, and UIKit takes center stage. Additionally, the mastery of HTML, CSS, and JavaScript
+                    ensures the creation of captivating websites, underlining the commitment to exceed client
+                    expectations with exceptional digital solutions.
+                    <div class="intro">
+                        <h2 class="title"></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="plan item">
+                                <h3> Consultation</h3>
+                                <ul>
+                                    <li><strong>Project Assessment</strong>: Detailed review of project needs.</li>
+                                    <li><strong>Strategy Planning</strong>: Tailored solution strategies.</li>
+                                    <li><strong>Technical Guidance</strong>: Expert technology advice.</li>
+                                    <li><strong>Scalability Advice</strong>: Growth-ready solution planning.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="plan item">
+                                <h3> Construction </h3>
+                                <ul>
+                                    <li><strong>iOS App Development</strong>: Crafting intuitive mobile apps.</li>
+                                    <li><strong>Web Development</strong>: Creating engaging web experiences.</li>
+                                    <li><strong>Responsive Design</strong>: Optimizing for all device types.</li>
+                                    <li><strong>Quality Assurance</strong>: Ensuring flawless final products.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="plan item">
+                                <h3> Customization </h3>
+                                <ul>
+                                    <li><strong>Feature Addition</strong>: Adding functionality as needed.</li>
+                                    <li><strong>UI/UX Enhancement</strong>: Refining user interface and experience.</li>
+                                    <li><strong>Optimization</strong>: Boosting app performance.</li>
+                                    <li><strong>Product Upgrades</strong>: Keeping your product up-to-date.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="plan item">
-                  <h3> Construction </h3>
-                 
-                  <ul>
-                    <li><strong>iOS App Development</strong>: Crafting intuitive mobile apps.</li>
-                    <li><strong>Web Development</strong>: Creating engaging web experiences.</li>
-                    <li><strong>Responsive Design</strong>: Optimizing for all device types.</li>
-                    <li><strong>Quality Assurance</strong>: Ensuring flawless final products.</li>
-                  </ul>
-                  
-                  <!-- <a href="Contact.html" class="btn btn-default">View plan</a> -->
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="plan item">
-                  <h3> Customization </h3>
-
-                  <ul>
-                    <li><strong>Feature Addition</strong>: Adding functionality as needed.</li>
-                    <li><strong>UI/UX Enhancement</strong>: Refining user interface and experience.</li>
-                    <li><strong>Optimization</strong>: Boosting app performance.</li>
-                    <li><strong>Product Upgrades</strong>: Keeping your product up-to-date.</li>
-                  </ul>
-                  
-                  <!-- <a href="Contact.html" class="btn btn-default">View plan</a> -->
-                </div>
-              </div>
-              </div>
             </div>
-          </div>
+        </section>
+        <div class="button-container">
+            <a href="Schedule.html" class="btn btn-default">Schedule</a>
         </div>
-      </section>
-      <div class="button-container">
-        <a href="Schedule.html" class="btn btn-default">Schedule</a>
-      </div>
-        
-      </section>
-      <!-- Footer-->
-      
-        <div class="container content">
-          <div class="row">
-            <!-- Contact info-->
-            <div class="col-md-2">
-              <!-- <p>
-                P (+1) 0 313 740 6742<br />F (+1) 0 123 456 78<br />M
-                contact@kbstudio.com
-              </p> -->
-            </div>
-            <div class="col-md-2">
-              <!-- <p>
-                Submerge Records<br />3000 E Grand Blvd <br />48202 Detroit, MI
-              </p> -->
-            </div>
-            <div class="col-md-8 text-right">
-              <!-- Social links-->
-              <ul class="social">
-                <!-- <li><a href="#" class="fa fa-twitter"></a></li>
-
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-instagram"></a></li> -->
-              </ul>
-              <!-- Copyright message-->
-              
-
-      
-    </div>
-    <div class="" style=" text-align: center; padding-top: 20%;">
-      2022 &copy; Baaqi Studio. All rights reserved.
+        <div style="text-align: center; padding-top: 5%;">
+            2022 &copy; Baaqi Studio. All rights reserved.
+        </div>
     </div>
 
     <script src="js/assets/bootstrap.js"></script>

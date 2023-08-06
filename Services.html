@@ -2,10 +2,7 @@
 <html>
   <head>
     <title>Baaqi Studio - Services</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/core.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
@@ -17,10 +14,65 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -70px; /* Adjust this value according to your needs */
+        margin-top: 20px;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background: white;
+       
+}
+
+
+
+
+
+      @media (max-width: 768px) {
+
+        .footer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Adjust height as needed */
+        padding: 20px 0;
+        width: 100%;
+    }
+
+        .navbar-classic {
+          display: none;
+        }
+        .mobile-nav {
+          display: block;
+        }
+        .button-container {
+          margin-top: 20px;
+        }
+        .col-md-2, .col-md-8 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          text-align: center;
+        }
+        .plan.item {
+          margin-bottom: 20px;
+        }
       }
     </style>
   </head>
+  <body>
+    <!-- ... Rest of your code remains unchanged ... -->
+    <script src="js/assets/bootstrap.js"></script>
+    <script src="js/assets/imagesloaded.pkgd.min.js"></script>
+    <script src="js/assets/validation.js"></script>
+    <script src="js/assets/masonry.pkgd.min.js"></script>
+    <script src="modules/tera-slider/tera-slider.js"></script>
+    <script src="modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="js/assets/animsition.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
+
   <body>
     <div class="body-overlay"></div>
     <!-- Menu-->
@@ -113,9 +165,9 @@
           <!-- Branding<a href="../index.html" class="brand"> <img alt="" src="../images/logo-black.svg" class="dark-brand"><img alt="" src="../images/logo-white.svg" class="light-brand"></a>-->
           <!-- Menu-->
           <ul class="navbar-classic">
-            <li><a href="Services.html" >Services </a></li>
-            <li><a href="Gallery.html" >Gallery </a></li>
-            <li><a href="Contact.html" >Contact </a></li>
+            <li><a href="Services.html" class="anchor">Services </a></li>
+            <li><a href="Gallery.html" class="anchor">Gallery </a></li>
+            <li><a href="Contact.html" class="anchor">Contact </a></li>
           </ul>
           <div class="mobile-nav"></div>
         </div>
@@ -209,14 +261,13 @@
               </ul>
               <!-- Copyright message-->
               
-              <div class="" style=" text-align: center;">
-                2022 &copy; Baaqi Studio. All rights reserved.
-              </div>
-            </div>
-          </div>
-        </div>
+
       
     </div>
+    <div class="" style=" text-align: center; padding-top: 20%;">
+      2022 &copy; Baaqi Studio. All rights reserved.
+    </div>
+
     <script src="js/assets/bootstrap.js"></script>
     <script src="js/assets/imagesloaded.pkgd.min.js"></script>
     <script src="js/assets/validation.js"></script>
